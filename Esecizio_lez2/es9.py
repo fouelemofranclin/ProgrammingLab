@@ -1,13 +1,14 @@
-def conta_vocali(stringa) :
+def conta_vocali(stringa):
     vocali = "aeiouAEIOU"
     conteggio = 0
-    for carattere in stringa 
-        if carattere in vocali 
+    
+    for carattere in stringa:
+        if carattere in vocali:
             conteggio += 1
-            return(conteggio
-                   
-                   
-                   
- testo = "esercitazione python"
- print(f"vocali presenti:{conta_vocali(testo)}")                  
-                   )
+            
+    return conteggio
+
+# Esempio di utilizzo:
+testo = "Ciao a tutti!"
+risultato = conta_vocali(testo)
+print(f"Numero di vocali: {risultato}")  # Output: 5
